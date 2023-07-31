@@ -1,0 +1,15 @@
+{
+  "semi": true,
+  "tabWidth": 2,
+  "trailingComma": "all",
+  "singleQuote": false,
+  "useTabs": false,
+  "printWidth": 80,
+  "plugins": ["prettier-plugin-tailwindcss"],
+  "pluginSearchDirs": false,
+  "overrides": [
+    {
+      "files": ".prettierrc"
+    }
+  ]
+}

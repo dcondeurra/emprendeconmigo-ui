@@ -16,7 +16,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         {...props}
       />
     );
-  }
+  },
 );
 Button.displayName = "Button";
 
@@ -32,7 +32,7 @@ const Slot = React.forwardRef<HTMLSlotElement, SlotProps>(
         {...props}
       />
     );
-  }
+  },
 );
 Slot.displayName = "Slot";
 
