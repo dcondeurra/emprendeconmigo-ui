@@ -1,4 +1,4 @@
-import { HelloWorld } from ".";
+import { Button, HelloWorld } from ".";
 
 function App() {
   return (
@@ -6,6 +6,7 @@ function App() {
       <div>Emprende conmigo UI library</div>
       <div>
         <HelloWorld />
+        <Button>Button</Button>
       </div>
     </>
   );
