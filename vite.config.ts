@@ -19,19 +19,25 @@ export default defineConfig({
       // make sure to externalize deps that shouldn't be bundled
       // into your library
       external: [
+        "@hookform/resolvers",
         "class-variance-authority",
         "react",
         "react-dom",
+        "react-hook-form",
         "tailwind-merge",
+        "yup",
       ],
       output: {
         // Provide global variables to use in the UMD build
         // for externalized deps
         globals: {
+          "@hookform/resolvers": "@hookform/resolvers",
           "class-variance-authority": "cva",
           react: "React",
           "react-dom": "ReactDOM",
+          "react-hook-form": "ReactHookForm",
           "tailwind-merge": "twMerge",
+          yup: "Yup",
         },
       },
     },
