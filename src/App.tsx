@@ -9,8 +9,10 @@ function App() {
       {
         name: "name",
         title: "Nombre",
+        placeholder: "Nombre",
         required: true,
         fieldType: FormFieldType.TEXT,
+        disabled: true,
       },
       {
         name: "lastName",
