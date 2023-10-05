@@ -16,6 +16,23 @@ const Table = React.forwardRef<
 ));
 Table.displayName = "Table";
 
+const TableInput = React.forwardRef<
+  HTMLInputElement,
+  React.InputHTMLAttributes<HTMLInputElement>
+>(({ className, ...props }, ref) => (
+  <input
+    ref={ref}
+    type="checkbox"
+    checked
+    className={cn(
+      "h-4 w-4 rounded-sm border-gray-300 bg-gray-100 focus:ring-2 focus:ring-blue-500",
+      className,
+    )}
+    {...props}
+  />
+));
+TableInput.displayName = "TableInput";
+
 const TableHeader = React.forwardRef<
   HTMLTableSectionElement,
   React.HTMLAttributes<HTMLTableSectionElement>
@@ -104,6 +121,7 @@ TableCaption.displayName = "TableCaption";
 
 export {
   Table,
+  TableInput,
   TableHeader,
   TableBody,
   TableFooter,

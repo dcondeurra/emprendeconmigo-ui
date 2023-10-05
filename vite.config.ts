@@ -20,12 +20,15 @@ export default defineConfig({
       // into your library
       external: [
         "@hookform/resolvers",
-        "@tanstack/react-table",
+        "axios",
         "class-variance-authority",
+        "clsx",
         "lucide-react",
         "react",
         "react-dom",
         "react-hook-form",
+        "react-intl",
+        "react-router-dom",
         "tailwind-merge",
         "tailwindcss-animate",
         "yup",
@@ -35,12 +38,15 @@ export default defineConfig({
         // for externalized deps
         globals: {
           "@hookform/resolvers": "@hookform/resolvers",
-          "@tanstack/react-table": "@tanstack/react-table",
+          axios: "Axios",
           "class-variance-authority": "cva",
+          clsx: "clsx",
           "lucide-react": "LucideReact",
           react: "React",
           "react-dom": "ReactDOM",
           "react-hook-form": "ReactHookForm",
+          "react-intl": "react-intl",
+          "react-router-dom": "ReactRouterDom",
           "tailwind-merge": "twMerge",
           "tailwindcss-animate": "tailwindcssAnimate",
           yup: "Yup",

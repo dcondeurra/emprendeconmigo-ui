@@ -1,9 +1,10 @@
+import defaultTheme from "tailwindcss/defaultTheme";
 import type { Config } from "tailwindcss";
 
 /** @type {import('tailwindcss').Config} */
 export default {
   darkMode: ["class"],
-  content: ["./index.html", "./src/**/*.{ts,tsx}"],
+  content: ["./src/**/*.{ts,tsx}"],
   theme: {
     container: {
       center: true,
@@ -13,6 +14,9 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ["Inter var", ...defaultTheme.fontFamily.sans],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -55,12 +59,12 @@ export default {
       },
       keyframes: {
         "accordion-down": {
-          from: { height: 0 },
+          from: { height: "0px" },
           to: { height: "var(--radix-accordion-content-height)" },
         },
         "accordion-up": {
           from: { height: "var(--radix-accordion-content-height)" },
-          to: { height: 0 },
+          to: { height: "0px" },
         },
       },
       animation: {
